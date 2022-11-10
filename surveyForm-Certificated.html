@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulário - Vinicius Pinha</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="surveyForm-Certificated.css">
+  </head>
+  <body>
+    <h1 id="title">Formulário - Vinicius Pinha</h1>
+    <p id="description">Obrigado por reservar para nosso formulário!</p>
+    <form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Nome e Sobrenome<input id="name" name="name" type="text" placeholder="Digite seu nome completo" required></label>
+        <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Digite seu email" required></label>
+        <label id="number-label" for="number">Idade (Opcional)<input id="number" name="number" type="number" min="18" max="120" placeholder="Digite sua idade" ></label>
+        <label for="dropdown"></label>O que você aprendeu até agora?
+        <select id="dropdown" name="dropdown">
+            <option value="SelecioneUma">(Selecione uma)</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML+CSS">HTML + CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Nada">Nada :(</option>
+        </select>
+
+        <label for="radiobuttom">O que você achou do conteúdo até agora?</label>
+        <label type="radio" for="radiobuttom"><input type="radio" id="radiobuttom" name="radiobuttom" value="Ruim"/>Ruim </label>
+        <label type="radio" for="radiobuttom"><input type="radio" id="radiobuttom" name="radiobuttom" value="Razoável"/>Razoável </label>
+        <label type="radio" for="radiobuttom"><input type="radio" id="radiobuttom" name="radiobuttom" value="Bom"/>Bom </label>
+        <label type="radio" for="radiobuttom"><input type="radio" id="radiobuttom" name="radiobuttom" value="Excelente"/>Excelente </label>
+
+        <label for="proximoCurso">Após finalizar o RWD, qual curso pretende fazer?
+          <select id="proximoCurso" name="proximoCurso">
+              <option value="SelecioneUma">(Selecione uma)</option>
+              <option value="Javascript">Javascript</option>
+              <option value="FrontEnd">Front End</option>
+              <option value="BackEnd">Back End</option>
+              <option value="DataAnalysis">Data Analysis</option>
+              <option value="Nenhum">Nenhum :(</option>
+          </select>
+        </label>
+
+        <label for="proxmoCurso">Após finalizar o RWD, qual ou quais cursos pretende fazer?
+          <label for="javascript"><input id="javascript" type="checkbox" value="javascript"/>Javascript</label>
+          <label for="Front End"><input id="Front End" type="checkbox" value="FrontEnd"/>Front End</label>
+          <label for="Back End"><input id="Back End" type="checkbox" value="BackEnd"/>Back End</label>
+          <label for="Data Analysis"><input id="Data Analysis" type="checkbox" value="DataAnalysis"/>Data Analysis</label>
+          <label for="Nenhum :("><input id="Nenhum :(" type="checkbox" value="Nenhum"/>Nenhum :(</label>
+        </label>
+
+        <label for="sugestoes"><textarea id="sugestoes" rows="3" cols="30" placeholder="Eu acho que pode melhorar..."></textarea></label>
+
+        <input type="submit" id="submit" class="font-effect-3d-float" value="Enviar">
+    </fieldset>
+    </form>
+  </body>
+</html>
